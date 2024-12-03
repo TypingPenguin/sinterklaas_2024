@@ -9,12 +9,10 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			fallback: '404.html'
+			// Specify the output directory, if needed
+			out: 'build', // Default is 'build', but you can change this if necessary
 		}),
-		paths: {
-			base: '/sinterklaas_2024',
-		}
-	}
+	},
 };
 
 export default config;
