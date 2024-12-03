@@ -43,7 +43,7 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <main class="min-h-screen flex flex-col items-center bg-gray-100 py-6 px-4 sm:px-6">
-	<h1 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">Sint-ordle</h1>
+	<h1 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">Wordle: Buanderie</h1>
 
 	<!-- Info Button -->
 	<div class="mb-4 flex items-center gap-2">
@@ -111,7 +111,7 @@
 	<!-- Game Over Message -->
 	{#if $locked}
 		<p class="mt-6 text-sm sm:text-lg text-gray-800 text-center">
-			Game Over!
+			Game Over! The word was "<strong class="font-bold">{solution}</strong>".
 		</p>
 	{/if}
 </main>
